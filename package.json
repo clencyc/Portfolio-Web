@@ -7,5 +7,9 @@
     "build": "npx tailwindcss build src/styles.css -o public/tailwind.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14"
+  }
 }
