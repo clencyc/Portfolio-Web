@@ -4,110 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/style.css">
     <!-- FONTS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbq1jVOxN1cuivIkiVNO8ihp77wuVsrI" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
     <title>document</title>
 </head>
 
 <body class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
-<div class="mt-9">
-    <!-- Home Section -->
-    <div class="w-[55%] border-2 border-black p-10 rounded-lg shadow flex flex-col">
-         <!-- Navigation Bar -->
-    <nav class="bg-white shadow-lg">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-4">
-                    <!-- Primary Nav -->
-                    <div class="hidden md:flex items-center space-x-1">
-                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
-                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
-                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Projects</a>
-                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact Me</a>
-                    </div>
-                </div>
-                <!-- Mobile Button -->
-                <div class="md:hidden flex items-center">
-                    <button class="mobile-menu-button">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
+
+    <div class="flex-row">
+    <aside class="w-2/5 bg-white float-right p-4 mt-1 mr-10 rounded-lg shadow flex flex-col">
+            <h2 class="font-bold text-2xl">Contact Me :)</h2>
+            <div class="w-full bg-white p-4 rounded-lg shadow flex flex-col"> <h1 class="font-bold text-3xl">Clency Christine</h1>
+              <h4 class="text-gray-400">Software Engineer</h4> <div class="w-40 m-3 relative block">
+                  <img class="w-full object-cover" src="Images/image.png" alt="Pic from github">
+              </div>
+              <div class="border solid-black"></div>
+              <div>
+                  <i class="fas fa-envelope"></i>
+                  <p>Email</p>
+                  <p>clency2023@gmail.com</p>
+              </div>
+              <div class="border solid-black"></div>
+              <div>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Location</p>
+                  <p>Nairobi, Kenya</p>
+              </div>
+              <div class="border solid-black"></div>
+              <p>Let's connect</p>
+              <div class="flex h-200 space-x-4"> 
+                  <a href="https://github.com/clencyc" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/clency-christine-643b32265/" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://x.com/christine_12_me" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/xtineme12/" class="text-blue-500 hover:text-blue-700">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div> 
             </div>
-        </div>
-    </nav>
+    </aside>
+          
+    <article class="w-1/2 mt-20 bg-white p-4 ml-10 rounded-lg shadow flex flex-col">
+            <h2 class="font-bold text-2xl">Home</h2>
+            <nav class="bg-transparent shadow-xl">
+              <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                  <div class="flex space-x-4">
+                    <div class="hidden md:flex items-center space-x-1">
+                      <a href="#" data-section="home" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                      <a href="#" data-section="about" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
+                      <a href="#" data-section="projects" class="py-5 px-3 text-gray-700 hover:text-gray-900">Projects</a>
+                      <a href="#" data-section="contact" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact Me</a>
+                    </div>
+                  </div>
+                  <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                      <i class="fas fa-bars"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </nav>
+<!-- Home section -->
+            <section id="home" class="section">
+
+            </section>
+<!-- About Section -->
+             <section id="about" class="section">
+                <div class="max-w-sm w-full lg:max-w-full lg:flex">
+                    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Woman holding a mug">
+                        <a href="#">
+                        <img src="Images/webdesign.png" alt="techi-pro sight">
+                    </a>
+                    </div>
+                    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                      <div class="mb-8">
+                        <div class="text-gray-900 font-bold text-xl mb-2">Web Design</div>
+                        <p class="text-gray-700 text-base">Developing Web-Sites for small to medium businesses </p>
+                      </div>
+                    </div>
+                  </div>
+             </section>
+<!-- Projects Section -->
+            <section id="projects" class="section">
+
+            </section>
+<!-- Contact me -->
+            <section id="contact" class="section">
+
+            </section>
+    </article>
 
     </div>
-    <!-- Contact Section -->
-    <div class="w-[35%] mr-12 bg-white p-25 rounded-lg shadow float-right flex flex-col">
-        <h1 class="font-bold text-3xl">Clency Christine</h1>
-        <h4 class="bg-grey">Software Engineer</h4>
-        <div class="w-40 m-3 relative block">
-            <img class="w-full object-cover" src="Images/image.png" alt="Pic from github">
-        </div>
-        <div class="border solid-black"></div>
-        <div>
-            <i class="fas fa-envelope"></i>
-            <p>Email</p>
-            <p>clency2023@gmail.com</p>
-        </div>
-        <div class="border solid-black"></div>
-        <div>
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Location</p>
-            <p>Nairobi, Kenya</p>
-        </div>
-        <div class="border solid-black"></div>
-        <!-- Socials -->
-        <div>
-            <p>Let's Connect</p>
-            <i class="fab fa-github"></i> 
-            <i class="fab fa-linkedin-in"></i> 
-            <i class="fab fa-twitter"></i> 
-            <i class="fab fa-instagram"></i> 
-        </div>
-    </div>
-</div>
 
-<script>
-    const navLinks = document.querySelector('.nav-links')
-    function onToggleMenu(e){
-        e.name = e.name === 'menu' ? 'close' : 'menu'
-        navLinks.classList.toggle('top-[9%]')
-    }
-</script>
-
-<script>
-    const words = ["Welcome to my website!","A Web Developer!", "Android Dev!"];
-    let i = 0;
-    let j = 0;
-    let currentWord = "";
-    let isDeleting = false;
-    
-    function type() {
-        currentWord = words[i];
-        if (isDeleting) {
-            document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
-            j--;
-            if (j == 0) {
-                isDeleting = false;
-                i++;
-                if (i == words.length) {
-                    i = 0;
-                }
-            }
-        } else {
-            document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
-            j++;
-            if (j == currentWord.length) {
-                isDeleting = true;
-            }
-        }
-        setTimeout(type, 100);
-    }
-    
-    type();
-</script>
-
+    <script src="main.js"></script>
 </body>
 </html>

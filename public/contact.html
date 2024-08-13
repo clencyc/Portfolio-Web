@@ -10,5 +10,105 @@
   <div class="w-1/2  bg-white p-4 mb-3 rounded-lg shadow flex flex-col">
     <h2>Contact Me</h2>
   </div>
+
+  <div class="flex flex-row">
+    <!-- Home Section -->
+    <div class="w-600 mt-10 ml-20 border-2 px-10 py-8 border-black p-10 rounded-lg shadow flex flex-col">
+        <!-- Navigation Bar -->
+   <nav class="bg-transparent shadow-xl">
+       <div class="max-w-6xl mx-auto px-4">
+           <div class="flex justify-between">
+               <div class="flex space-x-4">
+                   <!-- Primary Nav -->
+                   <div class="hidden md:flex items-center space-x-1">
+                       <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                       <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
+                       <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Projects</a>
+                       <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact Me</a>
+                   </div>
+               </div>
+               <!-- Mobile Button -->
+               <div class="md:hidden flex items-center">
+                   <button class="mobile-menu-button">
+                       <i class="fas fa-bars"></i>
+                   </button>
+               </div>
+           </div>
+       </div>
+   </nav>
+   </div>
+   <div class="container pt-9">
+       <div class="w-400 mr-12 bg-white p-25 px-10 py-8 rounded-lg shadow float-right flex flex-col">
+           <h1 class="font-bold text-3xl">Clency Christine</h1>
+           <h4 class="bg-grey">Software Engineer</h4>
+           <div class="w-40 m-3 relative block">
+               <img class="w-full object-cover" src="Images/image.png" alt="Pic from github">
+           </div>
+           <div class="border solid-black"></div>
+           <div>
+               <i class="fas fa-envelope"></i>
+               <p>Email</p>
+               <p>clency2023@gmail.com</p>
+           </div>
+           <div class="border solid-black"></div>
+           <div>
+               <i class="fas fa-map-marker-alt"></i>
+               <p>Location</p>
+               <p>Nairobi, Kenya</p>
+           </div>
+           <div class="border solid-black"></div>
+           <!-- Socials -->
+           <div>
+               <p>Let's Connect</p>
+               <i class="fab fa-github"></i> 
+               <i class="fab fa-linkedin-in"></i> 
+               <i class="fab fa-twitter"></i> 
+               <i class="fab fa-instagram"></i> 
+           </div>
+       </div>
+       
+   </div>
+    </div>
+
+    <script>
+      const navLinks = document.querySelector('.nav-links')
+      function onToggleMenu(e){
+          e.name = e.name === 'menu' ? 'close' : 'menu'
+          navLinks.classList.toggle('top-[9%]')
+      }
+  </script>
+  
+  <script>
+      const words = ["Welcome to my website!","A Web Developer!", "Android Dev!"];
+      let i = 0;
+      let j = 0;
+      let currentWord = "";
+      let isDeleting = false;
+      
+      function type() {
+          currentWord = words[i];
+          if (isDeleting) {
+              document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
+              j--;
+              if (j == 0) {
+                  isDeleting = false;
+                  i++;
+                  if (i == words.length) {
+                      i = 0;
+                  }
+              }
+          } else {
+              document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
+              j++;
+              if (j == currentWord.length) {
+                  isDeleting = true;
+              }
+          }
+          setTimeout(type, 100);
+      }
+      
+      type();
+  </script>
+  
 </body>
 </html>

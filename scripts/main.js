@@ -1,10 +1,18 @@
-const myImage = document.querySelector("img")
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('nav a');
 
-myImage.onclick = () => {
-    const mySrc = myImage.getAttribute("src")
-    if (mySrc === "Images/bmw2.jpeg") {
-        myImage.setAttribute("src", "images/firefox2.png");
-    } else {
-      myImage.setAttribute("src", "images/firefox-icon.png");
-    }
-};
+navLinks.forEach(link => {
+  link.addEventListener('click',   
+ (e) => {
+    e.preventDefault();
+    const sectionId = link.dataset.section;   
+
+
+    sections.forEach(section => {
+      section.classList.remove('active');
+    });
+
+    document.getElementById(sectionId).classList.add('active');   
+
+  });
+});
