@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,103 +8,174 @@
     <!-- FONTS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbq1jVOxN1cuivIkiVNO8ihp77wuVsrI" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <title>Document</title>
+    <style>
+        .section {
+            display: none;
+        }
 
-    <title>document</title>
+        .active {
+            display: block;
+        }
+    </style>
 </head>
-
 <body class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
 
     <div class="flex-row">
-    <aside class="w-2/5 bg-white float-right p-4 mt-1 mr-10 rounded-lg shadow flex flex-col">
+        <!-- Sidebar -->
+        <aside class="w-2/5 bg-white float-right p-4 mt-1 mr-10 rounded-lg shadow flex flex-col">
             <h2 class="font-bold text-2xl">Contact Me :)</h2>
-            <div class="w-full bg-white p-4 rounded-lg shadow flex flex-col"> <h1 class="font-bold text-3xl">Clency Christine</h1>
-              <h4 class="text-gray-400">Software Engineer</h4> <div class="w-40 m-3 relative block">
-                  <img class="w-full object-cover" src="Images/image.png" alt="Pic from github">
-              </div>
-              <div class="border solid-black"></div>
-              <div>
-                  <i class="fas fa-envelope"></i>
-                  <p>Email</p>
-                  <p>clency2023@gmail.com</p>
-              </div>
-              <div class="border solid-black"></div>
-              <div>
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>Location</p>
-                  <p>Nairobi, Kenya</p>
-              </div>
-              <div class="border solid-black"></div>
-              <p>Let's connect</p>
-              <div class="flex h-200 space-x-4"> 
-                  <a href="https://github.com/clencyc" class="text-blue-500 hover:text-blue-700">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/clency-christine-643b32265/" class="text-blue-500 hover:text-blue-700">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="https://x.com/christine_12_me" class="text-blue-500 hover:text-blue-700">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="https://www.instagram.com/xtineme12/" class="text-blue-500 hover:text-blue-700">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div> 
-            </div>
-    </aside>
+            <div class="w-full bg-white p-4 rounded-lg shadow flex flex-col">
+                <h1 class="font-bold text-3xl">Clency Christine</h1>
+                <h4 class="text-gray-400">Software Engineer</h4>
+                <div class="w-40 m-3 relative block">
+                    <img class="w-full object-cover rounded-lg" src="Images/image.png" alt="Pic from github">
+                </div>
+                <hr class="my-2">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <p>Email</p>
+                    <p>clency2023@gmail.com</p>
+                </div>
+                <hr class="my-2">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Location</p>
+                    <p>Nairobi, Kenya</p>
+                </div>
+                <hr class="my-2">
+                <p>Let's connect</p>
+                <div class="flex space-x-4"> 
+                    <a href="https://github.com/clencyc" class="text-blue-500 hover:text-blue-700">
+                        
+            <i class="devicon-github-original colored" style="font-size: 30px;"></i>
           
-    <article class="w-1/2 mt-20 bg-white p-4 ml-10 rounded-lg shadow flex flex-col">
+                    </a>
+                    <a href="https://www.linkedin.com/in/clency-christine-643b32265/" class="text-blue-500 hover:text-blue-700">
+                       
+           
+                <i class="devicon-linkedin-plain" style="font-size: 30px;"></i>
+                      
+          
+                    </a>
+                    <a href="https://x.com/christine_12_me" class="text-blue-500 hover:text-blue-700">
+                        
+            <i class="devicon-twitter-original colored" style="font-size: 30px;"></i>
+          
+                    </a>
+                    <a href="clency2023@gmail.com" class="text-blue-500 hover:text-blue-700">
+            <i class="devicon-google-plain" style="font-size: 30px;"></i>
+          
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <article class="w-1/2 mt-20 bg-white p-4 ml-10 rounded-lg shadow flex flex-col">
             <h2 class="font-bold text-2xl">Home</h2>
             <nav class="bg-transparent shadow-xl">
-              <div class="max-w-6xl mx-auto px-4">
-                <div class="flex justify-between">
-                  <div class="flex space-x-4">
-                    <div class="hidden md:flex items-center space-x-1">
-                      <a href="#" data-section="home" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
-                      <a href="#" data-section="about" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
-                      <a href="#" data-section="projects" class="py-5 px-3 text-gray-700 hover:text-gray-900">Projects</a>
-                      <a href="#" data-section="contact" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact Me</a>
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="flex justify-between">
+                        <div class="flex space-x-4">
+                            <div class="hidden md:flex items-center space-x-1">
+                                <a href="#" data-section="about" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
+                                <a href="#" data-section="projects" class="py-5 px-3 text-gray-700 hover:text-gray-900">Projects</a>
+                                <a href="#" data-section="contact" class="py-5 px-3 text-gray-700 hover:text-gray-900">Blogs</a>
+                                <a href="#" data-section="contact" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact Me</a>
+                            </div>
+                        </div>
+                        <div class="md:hidden flex items-center">
+                            <button class="mobile-menu-button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
                     </div>
+                </div>
+            </nav>
+            <!-- About Section -->
+            <section id="about" class="section active">
+                  <p class="mt-5">I am a Mathematics and Computer Science student at JKUAT with a passion for crafting innovative software solutions. <br>
+                    My academic journey has equipped me with a strong foundation in computer science fundamentals, enabling me to approach problem-solving with a logical and structured mindset. <br>
+                    My primary focus lies in web development and Android app development. Additionally, I have a keen interest in creating intuitive and engaging mobile experiences through Android app development
+                    I am a self-motivated learner who thrives in a collaborative environment. <br>
+                    I possess strong problem-solving skills and a relentless pursuit of knowledge. I am eager to contribute my skills to creating impactful applications that make a difference.
+                  </p>
+                  <h3 class="mt-8 text-xl">Technical skills</h3>
+                  <div class="container mt-10 flex gap-[90px]">
+                    <i class="devicon-android-plain colored" style="font-size: 100px;"> <p class="text-sm w-[20%]">Android <br> development</p> </i>
+                    <i class="devicon-django-plain colored" style="font-size: 100px;"> <p class="text-sm w-[20%]">Django Framework</p> </i>
+                    <i class="devicon-firebase-plain colored" style="font-size: 100px;"> <p class="text-sm w-[20%]">Firebase</p> </i> 
+                    </div>
+                  <div class="container mt-10 flex gap-[90px]">
+                    <i class="devicon-python-plain" style="font-size: 100px;"><p class="text-sm">Python</p></i>
+                    <i class="devicon-git-plain" style="font-size: 100px;"><p class="text-sm">Version control</p></i>
                   </div>
-                  <div class="md:hidden flex items-center">
-                    <button class="mobile-menu-button">
-                      <i class="fas fa-bars"></i>
-                    </button>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+              <div class="container mx-auto flex justify-between space-x-4">
+                <div class="container mx-auto">
+                  <div class="w-[100%] mt-5 bg-white shadow-xl rounded-lg overflow-hidden">
+                    <img src="Images/fit2.png" alt="Alps" class="w-full h-64 object-cover" />
+                    <div class="p-4 text-center">
+                      <p>Finance Tracker Mobile App</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </nav>
-<!-- Home section -->
-            <section id="home" class="section">
-
-            </section>
-<!-- About Section -->
-             <section id="about" class="section">
-                <div class="max-w-sm w-full lg:max-w-full lg:flex">
-                    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Woman holding a mug">
-                        <a href="#">
-                        <img src="Images/webdesign.png" alt="techi-pro sight">
+  
+                <div class="container mx-auto">
+                  <div class="w-[100%] mt-5 bg-white shadow-xl rounded-lg overflow-hidden">
+                    <a href="https://techipro-konnect-website.vercel.app/">
+                      <img src="Images/techipro.png" alt="Alps" class="w-full h-64 object-cover" />
                     </a>
+                    <div class="p-4 text-center">
+                      <p>Client Website</p>
                     </div>
-                    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                      <div class="mb-8">
-                        <div class="text-gray-900 font-bold text-xl mb-2">Web Design</div>
-                        <p class="text-gray-700 text-base">Developing Web-Sites for small to medium businesses </p>
-                      </div>
-                    </div>
-                  </div>
-             </section>
-<!-- Projects Section -->
-            <section id="projects" class="section">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            </section>
-<!-- Contact me -->
+            <!-- Contact Me Section -->
             <section id="contact" class="section">
-
+              
             </section>
-    </article>
-
+        </article>
     </div>
 
-    <script src="main.js"></script>
+    <script>
+      const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetSectionId = link.dataset.section;
+        const targetSection = document.getElementById(targetSectionId);
+
+        // Remove active class from all sections
+        sections.forEach(section => section.classList.remove('active'));
+
+        // Hide all sections and show the selected section
+        sections.forEach(section => section.style.display = 'none');
+        targetSection.style.display = 'block';
+
+        // Handle active class or styling for the clicked link
+        navLinks.forEach(link => link.classList.remove('active'));
+        link.classList.add('active');
+
+        // Smooth scrolling to the target section
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+// Initially display the active section
+document.querySelector('section.active').style.display = 'block';
+    </script>
 </body>
 </html>
