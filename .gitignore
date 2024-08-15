@@ -1,3 +1,25 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-# dependencies
-/node_modules/
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# IDE and editor files
+.vscode/
+*.suo
+*.user
+*.sln
+*.tmp
+*.db
+*.cache
+*.orig
+*.bk
+*.swp
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
