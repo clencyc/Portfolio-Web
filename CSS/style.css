@@ -1,3 +1,31 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h4 {
+  font-family: 'Merriweather', serif;
+}
+
+code, pre {
+  font-family: 'Roboto Mono', monospace;
+}
+.mobile-menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: None;
+}
+@media (max-width: 768px) {
+  .mobile-menu-button {
+      display: block;
+  }
+  .mobile-menu {
+      display: block;
+  }
+  .desktop-menu {
+      display: none;
+  }
+}
 .section {
   display: none;
 }

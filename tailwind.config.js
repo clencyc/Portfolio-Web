@@ -2,6 +2,12 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+    },
     colors: {
       'blue': '#1fb6ff',
       'purple': '#7e5bef',

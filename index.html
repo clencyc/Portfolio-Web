@@ -9,25 +9,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbq1jVOxN1cuivIkiVNO8ihp77wuVsrI" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
           
     <title>Document</title>
-    <style>
-        .section {
-            display: none;
-        }
-
-        .active {
-            display: block;
-        }
-    </style>
 </head>
-<body class="font-[Poppins] bg-gradient-to-t from-[#a6c1ee] to-[#a6c1ee] h-screen">
-
-    <div class="flex-row">
+<body class=" bg-gradient-to-t from-[#a6c1ee] to-[#a6c1ee]" >
+      <div class="flex-row">
+        
         <!-- Sidebar -->
-        <aside class="w-2/5 bg-white float-right p-4 mt-1 mr-10 rounded-lg shadow flex flex-col">
+        <aside class="w-2/5 md:w-2/5 bg-white float-right p-4 mt-1 md:mr-10 rounded-lg shadow flex flex-col order-1 md:order-2">
             <div class="w-full bg-white p-4 rounded-lg shadow flex flex-col">
-                <h1 class="font-bold text-3xl">Hi I'm Clency Christine</h1>
+                <h1 class="font-bold text-black text-3xl">Hi I'm Clency Christine</h1>
                 <h4 class="text-gray-400">Software Engineer and student</h4>
                 <div class="w-40 m-3 relative block">
                     <img class="w-full object-cover rounded-lg" src="Images/image.png" alt="Pic from github">
@@ -35,7 +28,6 @@
                 <hr class="my-2">
                 <div class="flex p-1">
                     <img class="h-5 w-25 pl-1" src="Images/email.png" alt="">
-                    
                     <p class="pl-3"> clency2023@gmail.com</p>
                 </div>
                 <hr class="my-2">
@@ -45,49 +37,45 @@
                     <p class="pl-3">Nairobi, Kenya</p>
                 </div>
                 <hr class="my-2">
+                <div class="flex p-1">
+                  <img class="h-5 w-25 pl-1" src="Images/image copy 5.png" alt="">
+                
+                  <p class="pl-3">+254-782552491</p>
+              </div>
+              <hr class="my-2">
                 <p>Let's connect</p>
                 <div class="flex space-x-4"> 
                     <a href="https://github.com/clencyc" class="text-blue-500 hover:text-blue-700" target="_blank">
-                        
             <i class="devicon-github-original colored" style="font-size: 30px;"></i>
-          
                     </a>
                     <a href="https://www.linkedin.com/in/clency-christine-643b32265/" class="text-blue-500 hover:text-blue-700" target="_blank">
-                <i class="devicon-linkedin-plain" style="font-size: 30px;"></i>
+                      <img src="Images/image copy 4.png" class="h-8 w-8" alt="">
                     </a>
                     <a href="https://x.com/christine_12_me" class="text-blue-500 hover:text-blue-700" target="_blank">        
-            <i class="devicon-twitter-original colored" style="font-size: 30px;"></i>  
-                    <!-- </a>
-                    <a href="clency2023@gmail.com" class="text-blue-500 hover:text-blue-700" target="_blank">
-            <i class="devicon-google-plain colored" style="font-size: 30px;"></i>
-                    </a> -->
+            <i class="devicon-twitter-original colored" style="font-size: 30px;"></i>
                 </div>
             </div>
         </aside>
 
         <!-- Main Content -->
-        <article class="w-1/2 mt-20 bg-white p-4 ml-10 rounded-lg shadow flex flex-col">
-            <nav class="bg-transparent shadow-xl">
+        <article class="w-full md:w-1/2 mt-20 bg-white p-4 ml-10 sm:overflo md:ml-10 sm:mt-30 rounded-lg shadow flex flex-col order-2 md:order-1 overflow-x-auto">
+            <nav class="bg-transparent shadow-xl border rounded-l-2xl mt-[-20px] mr-[-15px]">
                 <div class="max-w-6xl mx-auto px-4">
                     <div class="flex justify-between">
                         <div class="flex space-x-4">
                             <div class="hidden md:flex items-center space-x-1">
-                                <a href="#" data-section="about" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
-                                <a href="#" data-section="projects" class="py-5 px-3 text-gray-700 hover:text-gray-900">Projects</a>
-                                <a href="#" data-section="blog" class="py-5 px-3 text-gray-700 hover:text-gray-900">Blogs</a>
-                                <a href="#" data-section="contact" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact Me</a>
+                                <a href="#" data-section="about" class="py-5 px-3 text-gray-700 hover:text-gray-900 hover:shadow-lg transition duration-300">About</a>
+                                <a href="#" data-section="projects" class="py-5 px-3 text-gray-700 hover:text-gray-900 hover:shadow-lg transition duration-300">Projects</a>
+                                <a href="#" data-section="blog" class="py-5 px-3 text-gray-700 hover:text-gray-900 hover:shadow-lg transition duration-300">Blogs</a>
+                                <a href="#" data-section="contact" class="py-5 px-3 text-gray-700 hover:text-gray-900 hover:shadow-lg transition duration-300">Contact Me</a>
                             </div>
-                        </div>
-                        <div class="md:hidden flex items-center">
-                            <button class="mobile-menu-button">
-                                <i class="fas fa-bars"></i>
-                            </button>
                         </div>
                     </div>
                 </div>
             </nav>
+
             <!-- About Section -->
-            <section id="about" class="section active">
+            <section id="about" class="section  active">
                   <p class="mt-5">I am a Mathematics and Computer Science student at JKUAT with a passion for crafting innovative software solutions. <br>
                     My academic journey has equipped me with a strong foundation in computer science fundamentals, enabling me to approach problem-solving with a logical and structured mindset. <br>
                     My primary focus lies in web development and Android app development. Additionally, I have a keen interest in creating intuitive and engaging mobile experiences through Android app development
@@ -95,7 +83,7 @@
                     I possess strong problem-solving skills and a relentless pursuit of knowledge. I am eager to contribute my skills to creating impactful applications that make a difference.
                   </p>
                   <div>
-                    <a href="Resume (4).pdf" download class=" border-2 border-blue-500 rounded-md mt-5 inline-block bg-white-500  text-black font-bold py-2 px-4 rounded-[10px] hover:bg-blue-700">
+                    <a href="Resume (4).pdf" download class="border-2 border-blue-500 rounded-md mt-5 inline-block bg-white-500  text-black font-bold py-2 px-4 rounded-[10px]">
                       <div class="flex ">
                         <img src="Images/download.png" alt="Download Icon" class="w-5 h-5 mr-2">
                         <p>Download CV</p>
@@ -104,17 +92,17 @@
                   </div>
                   <h3 class="mt-8 text-xl">Technical skills</h3>
                   <div class="container mt-10 flex gap-[90px]">
-                    <i class="devicon-android-plain plain aspect-square shadow-lg" style="font-size: 120px;"> <p class="text-sm w-[20%]">Android <br> development</p> </i>
-                    <i class="devicon-django-plain plain aspect-square shadow-lg" style="font-size: 120px;"> <p class="text-sm w-[20%]">Django Framework</p> </i>
-                    <i class="devicon-firebase-plain plain aspect-square shadow-lg" style="font-size: 120px;"> <p class="text-sm w-[20%]">Firebase</p> </i> 
+                    <i class="devicon-android-plain plain aspect-square shadow-lg text-gray-600" style="font-size: 120px;"> <p class="text-sm w-[20%]">Android <br> development</p> </i>
+                    <i class="devicon-django-plain plain aspect-square shadow-lg text-gray-600" style="font-size: 120px;"> <p class="text-sm w-[20%]">Django Framework</p> </i>
+                    <i class="devicon-firebase-plain plain aspect-square shadow-lg text-gray-600" style="font-size: 120px;"> <p class="text-sm w-[20%]">Firebase</p> </i> 
                     </div>
                   <div class="container mt-10 flex gap-[90px]">
-                    <i class="devicon-python-plain aspect-square shadow-lg" style="font-size: 120px;"><p class="text-sm">Python</p></i>
-                    <i class="devicon-git-plain aspect-square shadow-lg" style="font-size: 120px;"><p class="text-sm">Version control</p></i>
-                    <i class="devicon-kotlin-plain aspect-square shadow-lg" style="font-size: 120px;"><p class="text-sm">Kotlin</p></i>
+                    <i class="devicon-python-plain aspect-square shadow-lg text-gray-600" style="font-size: 120px;"><p class="text-sm">Python</p></i>
+                    <i class="devicon-git-plain aspect-square shadow-lg text-gray-600" style="font-size: 120px;"><p class="text-sm">Version control</p></i>
+                    <i class="devicon-kotlin-plain aspect-square shadow-lg text-gray-600" style="font-size: 120px;"><p class="text-sm">Kotlin</p></i>
                   </div>
-
             </section>
+
             <!-- Blog Section -->
     <section id="blog" class="section bg-gray-100 py-12">
       <div class="container mx-auto px-4">
@@ -152,53 +140,67 @@
           </div>
       </div>
     </section>
+
             <!-- Contact Me Section -->
             <section id="contact" class="section">
               <div class="container">
                 <h2 class="text-2xl font-bold mt-8">Contact Form</h2>
                 <form class="w-full max-w-lg">
                   <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    <div class="rounded-md w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="rounded-md block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                         Full Name
                       </label>
-                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-white-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text"> 
+                      <input class=" border-1 border-blue-500 rounded-md appearance-none block w-full bg-gray-200 text-gray-700 border border-white-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text"> 
                     </div>
                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                         Email Address
                       </label>
-                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-white-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text"> 
+                      <input class="border-1 border-blue-500 rounded-md appearance-none block w-full bg-gray-200 text-gray-700 border border-white-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text"> 
                     </div>
                   </div>
                   <div class="w-full md:w-[100%] px-3">
                       <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                         Message
                       </label>
-                      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-20 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Message">
+                      <input class="border-1 border-blue-500 rounded-md appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-20 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Message">
                     </div>
                 </form>
+
+                <button class="border-1 border-blue-500 rounded-md flex border items-center space-x-2 px-4 mt-10 ml-5 py-2 bg-white-500  text-black rounded-lg" type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Send Message</span>
+              </button>
               </div> 
             </section>
-                        <!-- Projects Section -->
-                        <section id="projects" class="section">
-                          <div class="container mx-auto flex justify-between space-x-4">
-                            <div class="container mx-auto">
-                              <div class="w-[100%] mt-5 bg-white shadow-xl rounded-lg overflow-hidden">
-                                <img src="Images/fit2.png" alt="Alps" class="w-full h-64 object-cover" />
-                                <div class="p-4 text-center">
-                                  <p>Finance Tracker Mobile App</p>
-                                </div>
+                    <!-- Projects Section -->
+                    <section id="projects" class="section">
+                        <div class="container">
+                          <div class="container mx-auto">
+                            <div class="w-[100%] flex mt-5 bg-white shadow-xl rounded-lg overflow-hidden">
+                              <img src="Images/fit2.png" alt="Alps" class="w-65 h-40" />
+                              <div class="p-4 text-center">
+                                <p>Finance Tracker Mobile App</p>
+                                <p>This was a mobile application built with kotlin and xml. The application helps users track their financials according to the amounts they recieve and payout </p>
+
+                                  <a href="https://github.com/clencyc/Mobile_BelleBackend" class="hover:bg-blue-100 rounded-full py-5 px-4 text-white transition ease-in-out" target="_blank">
+                                    <i class="devicon-github-original colored" style="font-size: 30px;"></i>
+                                    </a>
                               </div>
                             </div>
-              
+                          </div>
                             <div class="container mx-auto">
-                              <div class="w-[100%] mt-5 bg-white shadow-xl rounded-lg overflow-hidden">
-                                <a href="https://techipro-konnect-website.vercel.app/">
-                                  <img src="Images/techipro.png" alt="Alps" class="w-full h-64 object-cover" />
+                              <div class="w-[100%] flex mt-5 bg-white shadow-xl rounded-lg overflow-hidden">
+                                <a href="https://techipro-konnect-website.vercel.app/" target="_blank">
+                                  <img src="Images/techipro.png" alt="Alps" class="w-65 h-40" />
                                 </a>
                                 <div class="p-4 text-center">
-                                  <p>Client Website</p>
+                                  <p>Techipro landing page</p>
+                                  <p>Access services Discover top-rated technicians <br> for your projects effortlessly with our specialized <br> gig-finding service, connecting you with skilled professionals in no time</p>
+                                  <a href="https://github.com/clencyc/Mobile_BelleBackend" class="hover:bg-blue-100 rounded-full py-5 px-4 text-white transition ease-in-out" target="_blank">
+                                    <i class="devicon-github-original colored" style="font-size: 30px;"></i>
+                                    </a>
                                 </div>
                             </div>
                           </div>
@@ -237,5 +239,15 @@ navLinks.forEach(link => {
 // Initially display the active section
 document.querySelector('section.active').style.display = 'block';
     </script>
+
+    <!-- JavaScript to Toggle Mobile Menu -->
+<script>
+  const mobileMenuButton = document.querySelector('.mobile-menu-button');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>
