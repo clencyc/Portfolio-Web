@@ -25,6 +25,10 @@ code, pre {
   .desktop-menu {
       display: none;
   }
+  aside {
+      margin: 0 auto;
+      max-width: 800px;
+  }
 }
 .section {
   display: none;
